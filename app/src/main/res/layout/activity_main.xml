@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTAS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="16dp"
+    />
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/edIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Disciplina" />
+
+    <EditText
+        android:id="@+id/edNota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 1º Bimestre"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edNota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 2º Bimestre"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar" />
+
+    <Button
+        android:id="@+id/btLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpar" />
+
+    <TextView
+        android:id="@+id/tvErro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
