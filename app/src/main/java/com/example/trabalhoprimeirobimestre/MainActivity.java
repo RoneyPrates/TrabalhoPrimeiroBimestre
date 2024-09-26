@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         StringBuilder erros = new StringBuilder();
         if (nome.isEmpty()) erros.append("\"O campo de nome está vazio\n");
-        if (email.indexOf("@") <1 erros.append("\"O email é inválido\n");
+        if (email.isEmpty() || email.contains("@")) erros.append("\"O email é inválido\n");
         if (idade.isEmpty() || Integer.parseInt(idade) <= 0) erros.append("\"A\n" + "idade deve ser um número positivo\n");
         if (disciplina.isEmpty()) erros.append("O campo de disciplina está vazio.\n");
         if (nota1Bimestre.isEmpty() || nota2Bimestre.isEmpty() || !notaValida(nota1Bimestre) || !notaValida(nota2Bimestre)) {
